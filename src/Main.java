@@ -13,6 +13,9 @@ public class Main {
                 260
         );
 
+        carro1.visualizarInfoDoCarro();
+
+
 
     }
 }
