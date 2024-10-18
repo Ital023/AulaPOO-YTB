@@ -1,9 +1,5 @@
-# Aula DTO
+# Aula POO 
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
-![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)
 
 # Sobre o projeto
@@ -17,35 +13,52 @@ O projeto simula um sistema de carros, aplicando na prática cada um desses conc
 
 Acompanhe o vídeo completo no YouTube e veja como os conceitos são implementados no código!
 
+Link do vídeo: 
 
-### Tecnologias Utilizadas
+# Material de apoio
 
-- *Back-end*: Spring Boot, com ênfase na utilização de Data Transfer Objects (DTOs) para garantir a integridade e a estrutura dos dados. O projeto também abrangeu a modelagem de banco de dados e a criação de APIs REST.
+<img src="/assetsReadme/banner.png" alt="banner" width="350">
 
-- *Front-end*: React e TypeScript, onde também utilizei DTOs para estruturar e tipar os dados recebidos das APIs. Utilizei Axios para o consumo das APIs, garantindo uma comunicação fluida entre o front-end e o back-end.
+
+## O que é o paradigma da orientação a objetos? 
+
+A **Programação Orientada a Objetos (POO)** é um paradigma que organiza o software em torno de **objetos**, que são instâncias de **classes** que combinam dados (atributos) e comportamentos (métodos). Seus pilares principais são: **encapsulamento**, que protege os dados internos e permite acesso controlado; **herança**, que permite que uma classe derive características de outra; **polimorfismo**, que permite o uso de objetos de diferentes tipos de forma intercambiável; e **abstração**, que foca nos detalhes essenciais enquanto oculta a complexidade.
+
+## Os Pilares da POO
+
+<img src="/assetsReadme/pilares.png" alt="banner" width="400">
+
+### Encapsulamento
+<img src="/assetsReadme/encapsulamento.png" alt="banner" width="400">
+
+**Encapsulamento** é um dos pilares da Programação Orientada a Objetos (POO) que consiste em ocultar os detalhes internos de uma classe e controlar o acesso aos seus atributos e métodos. Isso é feito utilizando **modificadores de acesso** como `private`, `protected` e `public`, que definem quais partes do código podem interagir com os dados de um objeto. O objetivo é proteger o estado interno de um objeto, permitindo que ele seja manipulado apenas através de métodos específicos, conhecidos como **getters** e **setters**, garantindo maior segurança, manutenção e modularidade do código.
+
+### Abstração
+<img src="/assetsReadme/abstracao.png" alt="banner" width="400">
+
+**Abstração** na Programação Orientada a Objetos (POO) é o princípio que foca em expor apenas os detalhes essenciais de um objeto, ocultando a complexidade desnecessária. Ela permite que os programadores trabalhem com conceitos mais genéricos, simplificando a implementação. A abstração é realizada por meio de **classes abstratas** e **interfaces**, que definem um conjunto de funcionalidades que devem ser implementadas pelas classes concretas. O objetivo é facilitar o design do sistema, promovendo flexibilidade, reuso e um entendimento mais claro do comportamento dos objetos sem precisar saber todos os detalhes internos.
+
+### Herança
+<img src="/assetsReadme/heranca.png" alt="banner" width="400">
+
+**Herança** na Programação Orientada a Objetos (POO) é um mecanismo que permite que uma classe (subclasse) herde atributos e métodos de outra classe (superclasse), promovendo **reuso de código**. Com a herança, a subclasse pode estender ou modificar o comportamento da superclasse, adicionando novas funcionalidades ou alterando métodos existentes. Isso facilita a criação de hierarquias de classes e a modelagem de relações "é um" (por exemplo, um "Carro" é um tipo de "Veículo"), além de promover organização e modularidade no código.
+
+### Polimorfismo
+<img src="/assetsReadme/polimorfismo.png" alt="banner" width="400">
+
+**Polimorfismo** na Programação Orientada a Objetos (POO) é a capacidade de um objeto assumir diferentes formas, permitindo que métodos com o mesmo nome funcionem de maneiras distintas dependendo do contexto. Isso pode ser feito de duas maneiras principais: **sobrecarga de métodos** (vários métodos com o mesmo nome, mas diferentes parâmetros) e **sobrescrita de métodos** (uma subclasse redefine um método da superclasse). O polimorfismo promove flexibilidade e reutilização de código, pois permite que diferentes tipos de objetos sejam tratados de maneira uniforme, mas com comportamentos específicos.
+
+
+
+
+
+
   
 # Tecnologias utilizadas
-## Back end
-- Java
-- Spring Boot
-- JPA / Hibernate
-- Maven
-
-## Front-end
-- React
-- TypeScript
-- Axios
-- Tailwind CSS
+ - Java
   
 
-# Rotas
-&#9679;	Users
 
-| Método | Caminho                      | Descrição                                           |
-| ------ | ---------------------------- | -------------------------------------------------- |
-| GET	    | /users	               | Retorna uma lista de todos os usuários.		 |
-| GET	    | /users/minDTO	               | Retorna uma lista reduzida de informações dos usuários.			 |
-| POST		    | /users	               |	Adiciona um novo usuário.		 |
 
 
 
@@ -56,24 +69,7 @@ Pré-requisitos: Java 21
 
 ```bash
 # clonar repositório
-git clone https://github.com/Ital023/DSCommerce.git
-
-# executar o projeto
-./mvnw spring-boot:run
-```
-
-## Front end web
-Pré-requisitos: npm / yarn
-
-```bash
-# clonar repositório
-git clone https://github.com/Ital023/AulaDTO.git
-
-# instalar dependências
-yarn install
-
-# executar o projeto
-yarn start
+git clone https://github.com/Ital023/AulaPOO-YTB.git
 ```
 
 ## 🤝 Colaboradores
