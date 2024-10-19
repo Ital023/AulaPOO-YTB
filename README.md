@@ -17,6 +17,72 @@ Link do vídeo:
 
 # Material de apoio
 
+## Antes de entendermos sobre POO, vamos revisar a sintaxe do java?
+
+<img src="/assetsReadme/java.png" alt="banner" width="150">
+
+### Tipos de dados
+- int -> Inteiro de 32 bits em notação de complemento de dois. Pode assumir valores entre -231=2.147.483.648 e 231-1=2.147.483.647.
+  
+- long	 -> 	Inteiro de 64 bits em notação de complemento de dois. Pode assumir valores entre -263 e 263-1.
+
+- double -> Representa números em notação de ponto flutuante normalizada em precisão dupla de 64 bits em conformidade com a norma IEEE 754-1985. O menor valor positivo representável é 4.94065645841246544e-324 e o maior é 1.7976931348623157e+308
+
+- boolean	 -> Pode assumir o valor true ou o valor false.
+
+- String -> Em Java, a classe String representa uma sequência imutável de caracteres, o que significa que seu valor não pode ser alterado após a criação. Strings podem ser criadas por literais ou pelo construtor da classe, e operações que parecem modificar o valor resultam em uma nova instância. A classe oferece diversos métodos úteis, como length() para obter o tamanho, substring() para extrair partes da string, e toUpperCase() para conversão para maiúsculas. Para comparar strings, o método equals() deve ser utilizado, pois o operador == compara referências e não os valores.
+
+#### List X Set
+- A diferença entre `List` e `Set` em Java está no comportamento e regras de armazenamento. Uma `List` permite elementos duplicados e preserva a ordem de inserção, além de permitir acesso por índices, como em um array. Já o `Set` não permite duplicatas, ou seja, cada elemento deve ser único, e em algumas implementações, como `HashSet`, a ordem de inserção não é garantida. Se você precisa de elementos únicos e não se importa com a ordem, `Set` é mais adequado; caso precise de ordenação e duplicatas, `List` é a escolha correta.
+
+### Operadores 
+
+#### Aritméticos
+- `+` (adição)
+- `-` (subtração)
+- `*` (multiplicação)
+- `/` (divisão)
+- `%` (módulo - resto da divisão)
+
+#### Atribuição
+- `=` (atribuição simples)
+- `+=` (atribuição com adição)
+- `-=` (atribuição com subtração)
+- `*=` (atribuição com multiplicação)
+- `/=` (atribuição com divisão)
+- `%=` (atribuição com módulo)
+
+#### Comparação (Relacionais)
+- `==` (igual a)
+- `!=` (diferente de)
+- `>` (maior que)
+- `<` (menor que)
+- `>=` (maior ou igual a)
+- `<=` (menor ou igual a)
+
+#### Lógicos
+- `&&` (E lógico - AND)
+- `||` (OU lógico - OR)
+- `!` (não lógico - NOT)
+
+#### Unários
+- `+` (indica valor positivo)
+- `-` (inverte o sinal do número)
+- `++` (incrementa em 1)
+- `--` (decrementa em 1)
+- `!` (inverte um valor booleano)
+
+#### Ternário
+- `? :` (expressão condicional)
+  - Exemplo: `(condição) ? valorSeVerdadeiro : valorSeFalso`
+
+#### Instância e Tipo
+- `instanceof` (verifica se um objeto é uma instância de uma classe)
+
+
+# Voltando ao POO...
+
+
 <img src="/assetsReadme/banner.png" alt="banner" width="350">
 
 
