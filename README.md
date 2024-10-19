@@ -13,7 +13,7 @@ O projeto simula um sistema de carros, aplicando na prática cada um desses conc
 
 Acompanhe o vídeo completo no YouTube e veja como os conceitos são implementados no código!
 
-Link do vídeo: 
+Parte 1: https://www.youtube.com/watch?v=VcxaS74WnFg
 
 # Material de apoio
 
