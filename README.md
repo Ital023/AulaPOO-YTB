@@ -101,6 +101,13 @@ ___
 
 **Encapsulamento** é um dos pilares da Programação Orientada a Objetos (POO) que consiste em ocultar os detalhes internos de uma classe e controlar o acesso aos seus atributos e métodos. Isso é feito utilizando **modificadores de acesso** como `private`, `protected` e `public`, que definem quais partes do código podem interagir com os dados de um objeto. O objetivo é proteger o estado interno de um objeto, permitindo que ele seja manipulado apenas através de métodos específicos, conhecidos como **getters** e **setters**, garantindo maior segurança, manutenção e modularidade do código.
 
+| Modificador       | Classe | Pacote | Subclasse | Global |
+|----------------|:-----:|:-------:|:--------:|:-----:|
+| `public`       |   ✔   |    ✔    |    ✔     |   ✔   |
+| `protected`    |   ✔   |    ✔    |    ✔     |   ✘   |
+| *Sem Modificador*  |   ✔   |    ✔    |    ✘     |   ✘   |
+| `private`      |   ✔   |    ✘    |    ✘     |   ✘   |
+
 ___
 
 
