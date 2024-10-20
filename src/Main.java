@@ -1,27 +1,28 @@
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-
 public class Main {
     public static void main(String[] args) {
-        Carro carro1 = new Carro("Chevrolet"
-                , "Onix"
+        Carro carro1 = new Carro(1L,
+                "Chevrolet"
+                , "Onix",
+                2021
                 , "Branco",
                 15000,
                 170);
 
-        Carro carro2 = new Carro("Nissan"
-                , "March"
+        Carro carro2 = new Carro( 2L,
+                "Nissan"
+                , "March",
+                2015
                 , "Azul",
                 2000,
                 150);
 
-        carro1.mostrarVelocidadeAtual();
-        carro1.acelerar();
-        carro1.mostrarVelocidadeAtual();
-        carro1.acelerar();
-        carro1.mostrarVelocidadeAtual();
+        Concessionaria concessionaria1 =
+                new Concessionaria(1L, "Cars", "Fortaleza", "Ceara");
+
+        concessionaria1.addCarro(carro1);
+        concessionaria1.addCarro(carro2);
+
+        concessionaria1.mostrarCarrosDisponiveis();
 
     }
 }
