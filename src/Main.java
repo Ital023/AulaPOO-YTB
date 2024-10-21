@@ -4,25 +4,38 @@ public class Main {
                 "Chevrolet"
                 , "Onix",
                 2021
-                , "Branco",
-                15000,
+                , 200,
+                "Branco",
                 170);
 
         Carro carro2 = new Carro( 2L,
                 "Nissan"
                 , "March",
                 2015
-                , "Azul",
-                2000,
+                , 160,
+                "Azul",
                 150);
+
+        Caminhao caminhao1 = new Caminhao(3L
+                , "Scania"
+                , "modelo1"
+                , 2015,
+                200
+                , 200,
+                300
+        );
 
         Concessionaria concessionaria1 =
                 new Concessionaria(1L, "Cars", "Fortaleza", "Ceara");
 
-        concessionaria1.addCarro(carro1);
-        concessionaria1.addCarro(carro2);
+        carro1.acelerar();
+        carro1.mostrarVelocidadeAtual();
+        carro1.acelerar();
+        carro1.mostrarVelocidadeAtual();
+        carro1.freiar();
+        carro1.mostrarVelocidadeAtual();
 
-        concessionaria1.mostrarCarrosDisponiveis();
+
 
     }
 }

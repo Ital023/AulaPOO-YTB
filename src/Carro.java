@@ -1,4 +1,4 @@
-public class Carro extends Veiculo{
+public class Carro extends Veiculo implements Movimentacao{
 
     // Atributos
 
@@ -6,15 +6,12 @@ public class Carro extends Veiculo{
     //private String modelo;
     private String cor;
     private int kmRodados;
-    private int velocidadeAtual;
-    private int velocidadeMaxima;
 
-    public Carro(Long id, String marca, String modelo, int anoDeFabricacao, String cor, int kmRodados, int velocidadeMaxima) {
-        super(id, marca, modelo, anoDeFabricacao);
+
+    public Carro(Long id, String marca, String modelo, int anoDeFabricacao, int velocidadeMaxima, String cor, int kmRodados) {
+        super(id, marca, modelo, anoDeFabricacao, velocidadeMaxima);
         this.cor = cor;
         this.kmRodados = kmRodados;
-        this.velocidadeAtual = 0;
-        this.velocidadeMaxima = velocidadeMaxima;
     }
 
     // Metodos
@@ -24,18 +21,34 @@ public class Carro extends Veiculo{
         System.out.println("Modelo: " + getModelo());
         System.out.println("Cor: " + cor);
         System.out.println("Km rodados: " + kmRodados);
-        System.out.println("Velocidade maxima: " + velocidadeMaxima);
+        System.out.println("Velocidade maxima: " + getVelocidadeMaxima());
         System.out.println("----------------------------------------");
     }
 
     @Override
     public void acelerar() {
-        velocidadeAtual += 10;
+        int velocidadeAtual = getVelocidadeAtual();
+        velocidadeAtual += 20;
+        setVelocidadeAtual(velocidadeAtual);
         System.out.println("Acelerando o carro modelo: " + getModelo());
     }
 
+    @Override
+    public void freiar() {
+        int velocidadeAtual = getVelocidadeAtual();
+        velocidadeAtual -= 20;
+        setVelocidadeAtual(velocidadeAtual);
+        System.out.println("Freiando o carro modelo: " + getModelo());
+    }
+
+    @Override
+    public void buzinar() {
+        System.out.println("carro buzinando: PEN PEN");
+    }
+
+    @Override
     public void mostrarVelocidadeAtual() {
-        System.out.println("A velocidade atual do veiculo é: " + velocidadeAtual);
+        System.out.println("A velocidade atual do carro " + getModelo() + " é: " + getVelocidadeAtual());
     }
 
     public String getCor() {
@@ -53,22 +66,4 @@ public class Carro extends Veiculo{
     public void setKmRodados(int kmRodados) {
         this.kmRodados = kmRodados;
     }
-
-    public int getVelocidadeAtual() {
-        return velocidadeAtual;
-    }
-
-    public void setVelocidadeAtual(int velocidadeAtual) {
-        this.velocidadeAtual = velocidadeAtual;
-    }
-
-    public int getVelocidadeMaxima() {
-        return velocidadeMaxima;
-    }
-
-    public void setVelocidadeMaxima(int velocidadeMaxima) {
-        this.velocidadeMaxima = velocidadeMaxima;
-    }
-
-
 }
