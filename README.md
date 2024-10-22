@@ -132,7 +132,17 @@ ___
 
 ___
 
+# O que é uma interface
+Uma interface em Java é um contrato que define um conjunto de métodos que uma classe deve implementar.
 
+Uma interface em Java permite a reutilização de código ao definir um conjunto de métodos que diferentes classes podem implementar. Isso facilita a criação de implementações diversas para o mesmo comportamento, promovendo flexibilidade e interoperabilidade.
+
+   ```
+   public interface Movimentacao {
+       void acelerar();
+       void freiar();
+   }
+   ```
 
 
 
